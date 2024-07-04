@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <script src="js/scripts.js"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="circle-star">
+        <img src="images/icon-star.svg" class="star"  alt="icon-star">
+      </div>
+      <h1 class="question">How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+      <ul class="buttons">
+        <li class="rating-item"><button class="rating-item" onclick="selectRating(this)">1</button></li>
+          <li class="rating-item"><button class="rating-item" onclick="selectRating(this)">2</button></li>
+          <li class="rating-item"><button class="rating-item" onclick="selectRating(this)">3</button></li>
+          <li class="rating-item"><button class="rating-item" onclick="selectRating(this)">4</button></li>
+          <li class="rating-item"><button class="rating-item" onclick="selectRating(this)">5</button></li>
+      </ul>
+      <button type="submit" onclick="submitForm()" class="submit">Submit</button>
+    </div>
+  </div>
+  <div class="atribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">lusketa</a>.
+  </div>
+</body>
+</html>
